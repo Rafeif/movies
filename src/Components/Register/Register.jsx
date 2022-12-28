@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { useState } from 'react';
 const Register = () => {
@@ -8,8 +9,10 @@ age:'',
 email:'',
 mYpassword:'',
 });
-let submitFormData=(e)=>{
+let submitFormData= async (e)=>{
 e.preventDefault();
+let {data}=await axios.post("",user);
+console.log(data)
 };
 let getFormValue=(e)=>{
 let myUser={...user};
@@ -19,7 +22,7 @@ console.log(myUser)
        }
     return (
         <div>
-<form onSubmit={()=>submitFormData} className='container'>
+<form onSubmit={submitFormData} className='container'>
   <div className="mb-3 ">
     <label htmlFor="firstName" className="form-label">First Name</label>
     <input type="text" onChange={getFormValue}  name='firstName' className="form-control" id="firstName" aria-describedby="emailHelp" />
