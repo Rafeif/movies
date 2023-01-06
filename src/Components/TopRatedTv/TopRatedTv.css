@@ -1,0 +1,8 @@
+.vot{
+    display: flex;
+    justify-content: space-evenly !important;
+    
+}
+.vot p{
+    font-size: 1.5rem;
+}

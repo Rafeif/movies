@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+:root {
+    --mainClr: #fff;
+}
+
+.header {
+    background-image: url(./wp7152659.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--mainClr);
+    position: relative;
+}
+
+.vertical-center {
+    /* margin: 0; */
+    position: absolute;
+    top: 35%;
+    /* -ms-transform: translateY(-50%); */
+    transform: translateY(-50%);
+}
+
+.movbok {
+    position: relative;
+}
+
+.vertical-center h1 {
+    color: #fff;
+    position: absolute;
+    font-size: 6rem;
+    transform: translate(-20%, -50%);
+}
+
+.vertical-center h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--mainClr);
+}
+
+.vertical-center h1:nth-child(2) {
+    color: var(--mainClr);
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}
+
+.vertical-center h2{
+padding-top: 50px;
+font-family: 'East Sea Dokdo', cursive;
+font-size: 5rem;
+animation: 3s anim-popoutin ease infinite;
+  }
+  
+  @keyframes anim-popoutin {
+    0% {
+      color: var(--mainClr);
+      transform: scale(0);
+      opacity: 0;
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+      color:var(--mainClr);
+      transform: scale(1.1);
+      opacity: 1;
+      text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      color: var(--mainClr);
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      /* animate nothing to add pause at the end of animation */
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  .Team{
+    color: var(--mainClr);
+    background-image: url('../CmingUp/78f3ee63dc4e396848dedcd999054e53.jpg')
+  }
+  .ourTeam {
+    
+    text-align: center;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 4rem;
+  }
+  .team{
+    display :flex ;
+    justify-content: space-evenly;
+    text-align: center;
+   
+  }
+  .member{ position: relative;}
+  .team img{
+    border-radius: 5px;
+   
+  }
+
+  .team h5{
+    padding-top: 5px;
+  }
+  .info{
+    position: absolute;
+    bottom: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    right: 0;
+    top:0;
+    left:0;
+    background: black;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+ .info i{
+  font-size: 1.5rem !important;
+  cursor: pointer;
+ }
+
+  .member:hover .info{
+    visibility: visible;
+    opacity: 0.4; 
+  }
+
+  .team img{
+    width:350px;
+    height: 400px;
+  }
+  .section-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    background-image: -webkit-linear-gradient(-30deg, #4a5e85 0%, #53487e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 14px;
+}
+
+.newsletter {
+    padding: 16% 0 5%;
+    background: url('battle-at-washington.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+}
+  .newsletter:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(-30deg, #7842cf 0%, #052157 100%);
+    opacity: .8;
+    z-index: -1; }
+  .newsletter .section-title {
+    margin-bottom: 59px; }
+    .newsletter .section-title h2 {
+      background-image: -webkit-linear-gradient(-30deg, #ffffff 0%, #ffffff 100%); }
+    .newsletter .section-title p {
+      color: #fff; }
+  .newsletter .newsletter-form {
+    background: -webkit-linear-gradient(-30deg, #7842cf 0%, #052157 100%);
+    position: relative;
+    height: 60px;
+    z-index: 2; }
+    .newsletter .newsletter-form:after {
+      position: absolute;
+      content: '';
+      left: -2px;
+      right: -2px;
+      top: -2px;
+      bottom: -2px;
+      background: -webkit-linear-gradient(-30deg, #91039f 0%, #91039f 100%);
+      z-index: -1; }
+    .newsletter .newsletter-form input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      padding: 30px;
+      background: #3f1667;
+      color: #fff;
+      padding-right: 200px; }
+      .newsletter .newsletter-form input::-webkit-input-placeholder {
+        color: #fff;
+        opacity: .6; }
+      .newsletter .newsletter-form input:-ms-input-placeholder {
+        color: #fff;
+        opacity: .6; }
+      .newsletter .newsletter-form input::-ms-input-placeholder {
+        color: #fff;
+        opacity: .6; }
+      .newsletter .newsletter-form input::placeholder {
+        color: #fff;
+        opacity: .6; }
+    .newsletter .newsletter-form .bb {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      width: 170px;
+      background: -webkit-linear-gradient(-30deg, #91039f 0%, #052157 100%);
+      outline: none;
+      border: none;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer; }
+      .newsletter .newsletter-form .bb:hover {
+        background: -webkit-linear-gradient(-30deg, #052157 0%, #91039f 100%); }
+        @media only screen and (max-width: 500px){
+          .movbok h1{
+            margin-left: 90px;
+            font-size: 4rem;
+          }
+        }
+        @media only screen and (min-width: 601px)and (max-width:962px){
+          .movbok h1{
+            margin-left: 90px;
+            font-size: 4rem;
+          }
+          .team{
+            display: block;
+          }
+          
+        }

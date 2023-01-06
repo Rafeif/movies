@@ -1,0 +1,131 @@
+.footer{
+background-image: url('../CmingUp/78f3ee63dc4e396848dedcd999054e53.jpg');
+color :#fff;
+padding-top:40px;
+
+text-align: center;
+}
+.foot{
+    margin-left: 100px;
+}
+.pages{
+    text-align: center;
+   
+}
+.pages h4{
+    padding-top:80px
+}
+.footerLogo {
+    padding-bottom:40px ;
+}
+.footer h5{
+    padding-bottom: 5px;
+}
+.footer h4{
+    font-size: 2rem;
+}
+.social i{
+    margin-right: 5px;
+}
+.social .fa-brands {
+    width: 36px;
+    height: 36px;
+    
+    box-shadow: none;
+    display: block;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px
+}
+.brands{
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: center;
+    padding-top: 15px;
+}
+.social{
+    text-align: center;
+    padding-top: 80px;
+}
+.social .fa-facebook-f{
+    background-color: #3b5998;
+}
+.social .fa-twitter {
+    background: #55acee
+}
+.social .fa-pinterest {
+    background: #d71e18;
+}
+.social .fa-linkedin-in{
+  background: #1565c0;
+}
+/* From uiverse.io by @alexruix */
+.inputt {
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #777;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+   }
+   
+   .inputt:focus, input:hover {
+    outline: none;
+    padding: .2rem .2rem;
+    /* border-radius: 1rem; */
+    border-color: #7a9cc6;
+   }
+   
+   .inputt::placeholder {
+    color: #777;
+   }
+   
+   .inputt:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   .fa-rocket{
+    margin-left: 5px;
+    background-color: #080808;
+    border: #fff dotted 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+   }
+   .fa-rocket{
+    cursor: pointer;
+   }
+   
+.popCorn{
+    text-align:left;
+   
+}
+.copyRight{
+    background-color: #080808;
+    width: 100% !important;
+}
+.copy{
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+   
+@media only screen and (max-width: 500px){
+    .foot{
+        margin:0;
+    }
+    .copy{
+        display: block !important;
+    }
+
+}
+@media only screen and (min-width: 601px)and (max-width:962px){
+   .foot{
+    margin: 0;
+   }
+}

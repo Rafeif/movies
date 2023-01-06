@@ -1,0 +1,16 @@
+.navbar{
+background-color: black;
+
+}
+.navbar a{
+    color:#fff;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color:rgb(64, 76, 119) !important;
+}
+@media only screen and (max-width: 500px){
+    .navbar-toggler .collapsed{
+        color: #fff !important;
+    }
+}

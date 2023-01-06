@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './Navbar/NavBar';
 import Home from './Home/Home';
-import About from './About/About';
+import Contact from './Contact/Contact';
 import Login from './Login/Login';
 import People from './People/People'
 import Register from './Register/Register';
@@ -12,11 +12,12 @@ import Movies from './Movies/Movies';
 const App = () => {
   return (
     <div>
+      
       <NavBar/>
       <Routes>
       <Route path='/' element={<Home/>}></Route>
         <Route path='home' element={<Home/>}></Route>
-        <Route path='about' element={<About/>}></Route>
+        <Route path='contact' element={<Contact/>}></Route>
         <Route path='movies' element={<Movies/>}></Route>
         <Route path='login' element={<Login/>}></Route>
         <Route path='people' element={<People/>}></Route>
